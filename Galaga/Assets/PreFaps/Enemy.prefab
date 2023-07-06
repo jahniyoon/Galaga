@@ -111,8 +111,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-<<<<<<< HEAD
-  moveSpeed: 15
-=======
   moveSpeed: 30
->>>>>>> 520f756d8c19c7d9c13f5078098229ee5fcdd10a
