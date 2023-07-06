@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyCorpsMove : MonoBehaviour
 {
-    private Rigidbody rigid = default;
     public float moveSpeed = 1.0f;
     private Vector3 enemyCorpsPosition = Vector3.zero;
 
