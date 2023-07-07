@@ -116,6 +116,7 @@ MonoBehaviour:
   spawnRateMin: 0.5
   spawnRateMax: 3
   bulletPool: {fileID: 0}
+  Explosion: {fileID: 1581592778943732402, guid: bbaeed459ba9b6d4fa1247bd390f5943, type: 3}
 --- !u!1001 &8866730210511766930
 PrefabInstance:
   m_ObjectHideFlags: 0

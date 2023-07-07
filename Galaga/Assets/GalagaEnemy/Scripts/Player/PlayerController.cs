@@ -98,7 +98,6 @@ public class PlayerController : MonoBehaviour
 
     public int SomeMethod()
     {
-        
         return weaponType;
     }
 }

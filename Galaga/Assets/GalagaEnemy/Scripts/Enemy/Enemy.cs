@@ -18,9 +18,9 @@ public class Enemy : MonoBehaviour
     private Transform player = default;
     private float spawnRate = default;
     private float timeAfterSpawn = default;
-    
 
 
+    public GameObject Explosion;
     void Start() 
     {
         timeAfterSpawn = 0f;
@@ -78,6 +78,16 @@ public class Enemy : MonoBehaviour
             }
 
         }
+
+
+        if (other.tag.Equals("PlayerBullet"))
+        {
+            Instantiate(Explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+
+        }
+
+
 
     }
 }
