@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
 
     // 첫번째로 스폰될 적의 위치 기준점 (가장 좌측 상단)
-    public Vector3 spawnPosition = new Vector3(-9f, 0.5f, 22f);
+    public Vector3 spawnPosition = new Vector3(-11.5f, 0.5f, 22f);
 
     // 적들과 적들의 위치 배열 생성
     private GameObject[] enemyPositions;
@@ -89,8 +89,8 @@ public class EnemySpawner : MonoBehaviour
         {
             for (int j = 0; j < enemyvalueUnits; j++)
             {
-                float x_positionNum = -9f + (j * 2f);
-                float z_positionNum = 22f + (i * 2f);
+                float x_positionNum = -11.5f + (j * 2.5f);
+                float z_positionNum = 22f + (i * 3f);
                 spawnPosition = new Vector3(x_positionNum, 0.5f, z_positionNum);
 
                 enemyPositions[j+(i*10)] = Instantiate(enemyPositionPrefab, spawnPosition, Quaternion.identity);
@@ -125,7 +125,7 @@ public class EnemySpawner : MonoBehaviour
     {
         spawnCount = 0;
         allEnemiesSpawned = false;
-        spawnPosition = new Vector3(-9f, 0.5f, 22f);
+        spawnPosition = new Vector3(-11.5f, 0.5f, 22f);
         EnemyValue += 10;
 
         SpawnEnemyPositions(); // 포지션 배열 다시 생성
