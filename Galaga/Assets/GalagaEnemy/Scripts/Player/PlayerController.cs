@@ -17,7 +17,13 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        
+        //수정 ssm
+        Audio audio = FindObjectOfType<Audio>();
+        audio.PlayMusic();
+
+        //수정 ssm
+
+
         playerRigid = GetComponent<Rigidbody>();
         weapons.Add(new Weapon("rifle", 1, 0.2f));
         weapons.Add(new Weapon("Sniper", 1, 1.2f));
@@ -70,7 +76,13 @@ public class PlayerController : MonoBehaviour
                 FireBullet(quaternionRotation);
                 fireTimer = 0f;
             }
-        
+
+            //수정 ssm
+            Audio audio = FindObjectOfType<Audio>();
+            audio.AttackMusic();
+
+            //수정 ssm
+
         }
     }
 

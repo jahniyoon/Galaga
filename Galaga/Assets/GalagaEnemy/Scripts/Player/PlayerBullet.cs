@@ -47,6 +47,13 @@ public class PlayerBullet : MonoBehaviour
 
             if (enemy != null)
             {
+                //수정 ssm
+                Audio audio = FindObjectOfType<Audio>();
+
+                audio.CatdieMusic();
+                audio.CatdieMusic();
+
+                //수정 ssm
                 Destroy(other.gameObject); // 적 오브젝트 삭제
                 if(type != 1)
                 {

@@ -72,6 +72,13 @@ public class Enemy : MonoBehaviour
 
             if (playercontroller != null)
             {
+                //수정 ssm
+                Audio audio = FindObjectOfType<Audio>();
+
+                audio.diePlayMusic();
+
+                //수정 ssm
+
                 Debug.Log("적이 플레이어 살해");
 
                 playercontroller.Die();

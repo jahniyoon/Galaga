@@ -27,6 +27,15 @@ public class EnemyBullet : MonoBehaviour
 
             if (playercontroller != null)
             {
+
+                //수정 ssm
+                Audio audio = FindObjectOfType<Audio>();
+
+                audio.diePlayMusic();
+                audio.diePlayMusic();
+
+
+                //수정 ssm
                 Debug.Log("플레이어 사망");
 
                 playercontroller.Die();
